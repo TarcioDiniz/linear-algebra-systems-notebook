@@ -1,7 +1,7 @@
 [project]
 name = "linear-algebra-systems-notebook"
 version = "0.1.0"
-description = "Add your description here"
+description = "Jupyter notebooks for exploring linear algebra concepts and solving systems of equations."
 readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [
