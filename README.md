@@ -8,7 +8,8 @@ Este repositório contém uma série de notebooks Jupyter dedicados ao estudo de
 
 O projeto está organizado para facilitar a navegação e o estudo progressivo:
 
-- `notebooks/`: Contém os notebooks Jupyter da série, numerados de 00 a 09.
+- `notebooks/`: Contém os notebooks Jupyter da série original sobre Sistemas Lineares.
+- `../notebooksU1/`: Contém os notebooks Jupyter da série da Unidade 1 (Espaços Vetoriais), numerados de 01 a 06.
 - `assets/`: Imagens, diagramas e outros recursos visuais utilizados nos notebooks.
 - `references/`: Material de apoio, bibliografia e links externos.
 - `docs/`: Documentação complementar e guias de convenção.
@@ -31,6 +32,17 @@ A série foi projetada para ser seguida na ordem numérica, transformando concei
 | 07 | [**Aplicação: Interpolação**](./notebooks/07_aplicacao_interpolacao_polinomial.ipynb) | Ajuste de curvas via Matriz de Vandermonde. |
 | 08 | [**Prática: Exercícios**](./notebooks/08_pratica_exercicios_resolvidos.ipynb) | Consolidação: Resolução manual vs. computacional. |
 | 09 | [**Conclusão**](./notebooks/09_conclusao_e_proximos_passos.ipynb) | Síntese final e próximos passos na jornada. |
+
+### Série: Espaços Vetoriais (Unidade 1)
+
+| Ordem | Tutorial | Tópico Principal |
+| :--- | :--- | :--- |
+| 01 | [**Espaços Vetoriais**](../notebooksU1/01_espacos_vetoriais.ipynb) | Definição formal, axiomas e vetores em NumPy. |
+| 02 | [**Subespaço**](../notebooksU1/02_subespaco.ipynb) | Condições espaciais, o vetor nulo e *Nullspace*. |
+| 03 | [**Combinação Linear**](../notebooksU1/03_combinacao_linear.ipynb) | Combinando vetores e resolvendo sistemas com Python. |
+| 04 | [**Subespaço Gerado**](../notebooksU1/04_subespaco_gerado.ipynb) | Span, espaço coluna em SymPy e visualização geométrica. |
+| 05 | [**LI e LD**](../notebooksU1/05_li_e_ld.ipynb) | Extraindo vetores independentes (RREF) e matrizes. |
+| 06 | [**Base**](../notebooksU1/06_base.ipynb) | O esqueleto do espaço: Dimensão e mudanças de base. |
 
 ---
 
