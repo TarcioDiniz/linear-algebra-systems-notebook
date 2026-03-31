@@ -2,16 +2,20 @@
 
 Este repositório contém uma série de notebooks Jupyter dedicados ao estudo de **Sistemas Lineares**, combinando o rigor acadêmico da álgebra linear com visualizações geométricas intuitivas e implementação prática em Python.
 
+### ✍️ Créditos e Reconhecimento
+
+Gostaria de dar os devidos créditos aos modelos de LLM **Gemini**, **ChatGPT** e **Junie**, que foram fundamentais para planejar e estruturar todo o conteúdo deste projeto. A colaboração destas inteligências artificiais permitiu um desenvolvimento ágil e metodológico, garantindo a organização e a profundidade pedagógica aqui apresentadas.
+
 ---
 
 ## 🏛️ Estrutura do Repositório
 
 O projeto está organizado para facilitar a navegação e o estudo progressivo:
 
-- `notebooks/`: Contém os notebooks Jupyter da série, numerados de 00 a 15.
-- `assets/`: Imagens, diagramas e outros recursos visuais utilizados nos notebooks.
-- `references/`: Material de apoio, bibliografia e links externos.
-- `docs/`: Documentação complementar e guias de convenção.
+- `notebooks/`: Contém os notebooks Jupyter da série, numerados de 00 a 11.
+- `assets/`: Imagens ou diagramas utilizados nos notebooks.
+- `references/`: Bibliografia detalhada e links úteis. Veja o [README de referências](./references/README.md).
+- `docs/`: Documentação complementar e **convenções de escrita** (`docs/conventions.md`).
 
 ---
 
@@ -22,57 +26,64 @@ A série foi projetada para ser seguida na ordem numérica, transformando concei
 | Ordem | Tutorial | Tópico Principal |
 | :--- | :--- | :--- |
 | 00 | [**Introdução e Roadmap**](./notebooks/00_introducao_e_roadmap.ipynb) | Visão geral, motivação e guia de estudo. |
-| 01 | [**Conceitos Básicos**](./notebooks/01_conceitos_basicos_e_visualizacao_2d.ipynb) | Definições, forma $Ax=b$ e visualização 2D. |
-| 02 | [**Matriz Aumentada**](./notebooks/02_matriz_aumentada_e_representacao.ipynb) | Representação matricial e Teorema de Rouché-Capelli. |
-| 03 | [**Métodos de Resolução**](./notebooks/03_metodos_resolucao_gauss_jordan.ipynb) | Algoritmos de Gauss e Gauss-Jordan (RREF). |
-| 04 | [**Espaços Vetoriais**](./notebooks/04_espacos_vetoriais.ipynb) | Definição formal, axiomas e vetores em NumPy. |
-| 05 | [**Subespaço**](./notebooks/05_subespaco.ipynb) | Condições espaciais, o vetor nulo e *Nullspace*. |
-| 06 | [**Combinação Linear**](./notebooks/06_combinacao_linear.ipynb) | Combinando vetores e resolvendo sistemas com Python. |
-| 07 | [**Subespaço Gerado**](./notebooks/07_subespaco_gerado.ipynb) | Span, espaço coluna em SymPy e visualização geométrica. |
-| 08 | [**LI e LD**](./notebooks/08_li_e_ld.ipynb) | Extraindo vetores independentes (RREF) e matrizes. |
-| 09 | [**Base**](./notebooks/09_base.ipynb) | O esqueleto do espaço: Dimensão e mudanças de base. |
-| 10 | [**Geometria 3D**](./notebooks/10_geometria_3d_e_independencia_linear.ipynb) | Visualização 3D, Vetores LI/LD e Posto. |
-| 11 | [**Transformações Lineares**](./notebooks/11_transformacoes_lineares_e_matrizes.ipynb) | Matrizes como funções: Núcleo e Imagem. |
-| 12 | [**Aplicação: Tráfego**](./notebooks/12_aplicacao_fluxo_trafego.ipynb) | Modelagem de redes viárias urbanas reais. |
-| 13 | [**Aplicação: Interpolação**](./notebooks/13_aplicacao_interpolacao_polinomial.ipynb) | Ajuste de curvas via Matriz de Vandermonde. |
-| 14 | [**Prática: Exercícios**](./notebooks/14_pratica_exercicios_resolvidos.ipynb) | Consolidação: Resolução manual vs. computacional. |
-| 15 | [**Conclusão**](./notebooks/15_conclusao_e_proximos_passos.ipynb) | Síntese final e transição para novos horizontes. |
+| 01 | [**Conceitos Básicos e Visualização 2D**](./notebooks/01_conceitos_basicos_e_visualizacao_2d.ipynb) | Definições e forma $Ax=b$. |
+| 02 | [**Matrizes e Operações**](./notebooks/02_matrizes_e_operacoes.ipynb) | Manipulação matricial com NumPy e SymPy. |
+| 03 | [**Eliminação de Gauss e Gauss-Jordan**](./notebooks/03_eliminacao_gauss_e_gauss_jordan.ipynb) | Algoritmos de escalonamento (RREF). |
+| 04 | [**Sistemas e Rouché-Capelli**](./notebooks/04_sistemas_e_rouche_capelli.ipynb) | Classificação de sistemas e Teorema de R-C. |
+| 05 | [**Espaços e Subespaços**](./notebooks/05_espacos_e_subespacos.ipynb) | Definição formal e axiomas. |
+| 06 | [**Combinação Linear e Span**](./notebooks/06_combinacao_linear_e_span.ipynb) | Espaço coluna e subespaço gerado. |
+| 07 | [**Independência Linear**](./notebooks/07_independencia_linear.ipynb) | Conceito de LI e LD. |
+| 08 | [**Base e Dimensão**](./notebooks/08_base_e_dimensao.ipynb) | O esqueleto do espaço vetorial. |
+| 09 | [**Transformações Lineares**](./notebooks/09_transformacoes_lineares.ipynb) | Matrizes como funções. |
+| 10 | [**Aplicações Práticas**](./notebooks/10_aplicacoes_praticas.ipynb) | Casos reais: Tráfego e Interpolação. |
+| 11 | [**Conclusão e Exercícios**](./notebooks/11_conclusao_e_exercicios.ipynb) | Consolidação do aprendizado. |
 
 ---
 
-## 🛠️ Tecnologias e Bibliotecas
+## 🛠️ Instalação e Execução
 
-Este projeto utiliza o ecossistema científico do Python:
+Este projeto utiliza o gerenciador de pacotes moderno [**uv**](https://github.com/astral-sh/uv).
 
-- **NumPy:** Computação numérica e álgebra linear de alto desempenho.
-- **SymPy:** Matemática simbólica (resoluções exatas e manipulação algébrica).
-- **Matplotlib & Seaborn:** Visualizações 2D e 3D.
-- **NetworkX:** Modelagem de redes (utilizado na aplicação de tráfego).
+### 1. Pré-requisitos
+- Python instalado (gerenciado automaticamente pelo `uv`).
+- Instale o `uv` se ainda não tiver:
+  ```powershell
+  powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex"
+  ```
 
-### Instalação
-
-O projeto utiliza o gerenciador de pacotes `uv`. Para configurar o ambiente e instalar as dependências:
-
+### 2. Configurando o Ambiente
+Clone o repositório e execute o comando abaixo na raiz do projeto:
 ```bash
-# Instala as dependências e cria o ambiente virtual
+# Cria o ambiente virtual e instala as dependências
 uv sync
 ```
 
+### 3. Rodando os Notebooks
+Para abrir os notebooks no VS Code ou Jupyter:
+```bash
+# Ativa o ambiente virtual (opcional, o VS Code reconhece automaticamente)
+uv run jupyter lab
+```
+Ou simplesmente abra os arquivos `.ipynb` no seu editor favorito e selecione o kernel criado pelo `uv`.
+
 ---
 
-## 📝 Convenções de Escrita
+## 📝 Convenções e Padrões
 
-Para manter a consistência acadêmica, adotamos as seguintes convenções:
+Para manter a consistência acadêmica, adotamos padrões rigorosos de notação e escrita.
+O arquivo principal de diretrizes pode ser encontrado em: **[`docs/conventions.md`](./docs/conventions.md)**.
 
-1. **Notação de Matrizes:** Letras maiúsculas em itálico ($A, B$).
-2. **Notação de Vetores:** Letras minúsculas em negrito ($\mathbf{x}, \mathbf{b}$).
-3. **Equações:** Centralizadas usando blocos LaTeX ($$Ax=b$$).
-4. **Comentários de Código:** Em português, explicando a lógica matemática por trás da implementação.
+Alguns pontos principais:
+1. **Notação de Matrizes:** Letras maiúsculas em itálico ($A$).
+2. **Notação de Vetores:** Letras minúsculas em negrito ($\mathbf{x}$).
+3. **Citações:** Padrão autor-data (ex: BOLDRINI, 1980).
 
 ---
 
 ## 🎓 Referências Principais
 
-- STRANG, Gilbert. *Introduction to Linear Algebra*. 5th ed. Wellesley-Cambridge Press, 2016.
-- ANTON, Howard; RORRES, Chris. *Álgebra Linear com Aplicações*. 10ª ed. Bookman, 2012.
-- LAY, David C. *Linear Algebra and Its Applications*. 4th ed. Pearson, 2012.
+Consulte a lista completa em [`references/README.md`](./references/README.md).
+
+- **BOLDRINI, José Luiz et al.** *Álgebra Linear*.
+- **STRANG, Gilbert.** *Introduction to Linear Algebra*.
+- **ANTON, Howard; RORRES, Chris.** *Álgebra Linear com Aplicações*.
